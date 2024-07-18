@@ -1,6 +1,37 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
+
+
+
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('𝐁𝐋 丶𝐒𝐲𝐬𝐭𝐞𝐦 is Fixed In VC room!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const allowedRoles = ['1256778578213736529', '1249816714917711953', '1262823943165972671'];
 
 client.on('messageCreate', async (message) => {
