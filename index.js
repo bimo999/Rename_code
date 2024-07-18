@@ -14,7 +14,7 @@ client.on('messageCreate', async (message) => {
         const hasPermission = allowedRoles.some(role => memberRoles.includes(role));
 
         if (!hasPermission) {
-            await message.reply(">:rolling_eyes:You Don't Have Permission!");
+            await message.reply(">:rolling_eyes: You Don't Have Permission!");
             await message.delete();
             return;
         }
@@ -24,7 +24,7 @@ client.on('messageCreate', async (message) => {
             await message.delete(); // Delete the command message after renaming the room
         } catch (error) {
             console.error(error);
-            await message.reply('Use : perfix $re roomname.');
+            await message.reply('Use prefix $re roomname.');
         }
     }
 });
